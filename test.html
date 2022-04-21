@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            max-width: 800px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <svg>
+            <!-- All instances of our symbol -->
+            <use href="#myDot" x="5"  y="5" style="opacity:1.0" />
+        </svg>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <!-- Our symbol in its own coordinate system -->
+        <symbol id="myDot" viewBox="0 0 22 22">
+            <defs>
+                <circle cx="10" cy="10" r="10" />
+            </defs>
+        </symbol>
+      </svg>
+</body>
+</html>
